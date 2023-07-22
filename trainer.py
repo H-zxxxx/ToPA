@@ -92,8 +92,8 @@ class Trainer:
     
     def update_weights_with_auxiliary(self, batch): # 更新一次网络权值
         observation_batch, target_policy, target_value = batch
-
         device = next(self.model.parameters()).device
+
         auxiliary_targets = torch.from_numpy(observation_batch[:, 6:]).float().to(device)
         observation_batch = torch.from_numpy(observation_batch[:, 0:6]).float().to(device)
         target_policy = torch.from_numpy(target_policy).float().to(device)

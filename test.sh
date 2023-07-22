@@ -1,0 +1,1 @@
+python elo.py --gpu 0
