@@ -1,4 +1,4 @@
-# ToPA
+# ToPA强化学习框架
 
 ## 训练
 ./train.sh
