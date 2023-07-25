@@ -1,9 +1,9 @@
 # ToPA强化学习算法
 
-## 训练
+## 训练（Linux系统）
 ./train.sh
 
-## 测试
+## 测试（Linux系统）
 ./test.sh
 
 若要更改测试模型，请在elo.py中更改。
