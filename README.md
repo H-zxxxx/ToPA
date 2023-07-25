@@ -55,14 +55,15 @@ select_action：动作选择算法
 达到设定训练步数自动停止训练
 
 
+### elo
+用于测试，评估训练出来的模型elo评分，结果保存到test_results中
+
+
 ## 介绍
 1. 我们提出ToPA算法（Monte Carlo Tree Search on both Planning and Acting），不仅在用于改进策略的规划方法（planning）使用树搜索，并将其扩展到实际自对弈（acting）中，整个算法可以视为“MCTS中的MCTS”。ToPA仍然是一个类AlphaZero算法。
 2. ToPA算法与最大熵蒙特卡洛树搜索（MENTS）结合，称为METPA（Maximum Entropy Tree Search on both Planning and Acting）算法，证明了最大熵算法和类AlphaZero算法结合的可行性。
 
 本程序使用C++（环境部分）和python（算法部分）编写，并使用ray库实现分布式和并行化。
 
-
-### elo
-用于测试，评估训练出来的模型elo评分，结果保存到test_results中
 
 更多详情见设计文档（design docs）。
